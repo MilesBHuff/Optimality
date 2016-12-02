@@ -53,7 +53,7 @@ Colours
   the brightest values defined above, and Window.*.Normal the darkest values
   defined above.
 | The remaining values were derived by averaging the primitive values.
-
+|
 +---------+----+--------+---------+------+--------+
 | Element | ?g | Type   | Full    | Half |   Lum  |
 +=========+====+========+=========+======+========+
