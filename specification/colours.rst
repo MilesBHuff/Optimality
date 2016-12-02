@@ -90,4 +90,4 @@ Usage
 #. Other elements are coloured with a ?.bg.? colour.
 #. Interactive controls are coloured with a View.?.? value.
 #. Elements that, when clicked, perform some action, are coloured with a
-  ?.?.Hover value when a cursor is ontop of them.
+   ?.?.Hover value when a cursor is ontop of them.
