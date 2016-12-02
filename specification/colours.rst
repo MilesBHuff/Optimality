@@ -28,8 +28,8 @@ Rationale
   colours need to be as neutral a luminance as possible.
 * {4, 5, 6} The brightest foreground-colour is 100% luminant.
 * {4, 5, 6} The darkest background-colour is 25% luminant.
-* Given the above two items, the darkest foreground-colour will be 75% luminant,
-  and the lightest background-colour will be 50%.
+* Given the above two items, the darkest foreground-colour and the lightest
+  background-colour will be ≈67% luminant.
 * {6} Borders will use foreground-colours, so that the darkest colours can be
   used for the backgrounds, thus maximizing contrast.
 
@@ -46,14 +46,22 @@ Rationale
 
 Colours
 ================================================================================
-+---------+----+--------+---------+------+
-| Element | ?g | Type   | Full    | Half |
-+=========+====+========+=========+======+
-|         | bg | Normal | #7F7F7F | #888 |
-| View    +----+--------+---------+------+
-|         | fg | Normal | #FFFFFF | #FFF |
-+---------+----+--------+---------+------+
-|         | bg | Normal | #3F3E3E | #444 |
-| Window  +----+--------+---------+------+
-|         | fg | Normal | #BFBFBF | #CCC |
-+---------+----+--------+---------+------+
++---------+----+--------+---------+------+----------+
+| Element | ?g | Type   | Full    | Half |   Notes  |
++=========+====+========+=========+======+==========+
+|         | bg | Hover  | #7F7F7F | #888 |  50% Lum |
+|         +----+--------+---------+------+----------+
+|         | bg | Normal |         |      |          |
+| View    +----+--------+---------+------+----------+
+|         | fg | Hover  | #FFFFFF | #FFF | 100% Lum |
+|         +----+--------+---------+------+----------+
+|         | fg | Normal |         |      |          |
++---------+----+--------+---------+------+----------+
+|         | bg | Hover  |         |      |          |
+|         +----+--------+---------+------+----------+
+|         | bg | Normal | #3F3E3E | #444 |  25% Lum |
+| Window  +----+--------+---------+------+----------+
+|         | fg | Hover  |         |      |          |
+|         +----+--------+---------+------+----------+
+|         | fg | Normal | #BFBFBF | #CCC |  75% Lum |
++---------+----+--------+---------+------+----------+
