@@ -28,6 +28,10 @@ Rationale
   colours need to be as neutral a luminance as possible.
 * {4, 5, 6} The brightest foreground-colour is 100% luminant.
 * {4, 5, 6} The darkest background-colour is 25% luminant.
+* Given the above two items, the darkest foreground-colour will be 75% luminant,
+  and the lightest background-colour will be 50%.
+* {6} Borders will use foreground-colours, so that the darkest colours can be
+  used for the backgrounds, thus maximizing contrast.
 
 | In the past, this colour-scheme had a green tint;  but this was later removed,
   after the addition of principle #3.  
@@ -42,7 +46,14 @@ Rationale
 
 Colours
 ================================================================================
-view_bg_normal=
-view_fg_normal=
-window_bg_normal=
-window_fg_normal=
+    +---------+----+--------+---------+------+
+    | Element | *g | Type   | Full    | Half |
+    +=========+====+========+=========+======+
+    |         | bg | Normal | #7F7F7F | #888 |
+    | View    +----+--------+---------+------+
+    |         | fg | Normal | #FFFFFF | #FFF |
+    +---------+----+--------+---------+------+
+    |         | bg | Normal | #3F3E3E | #444 |
+    | Window  +----+--------+---------+------+
+    |         | fg | Normal | #BFBFBF | #CCC |
+    +---------+----+--------+---------+------+
