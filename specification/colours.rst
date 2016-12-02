@@ -49,8 +49,8 @@ Values
 | I divided the colours in an interface into two categories:  *view*, and
   *window*.  *View* is, for example, used for textboxes;  while *window* is used
   for, *ie*, the back-pane of a window.
-| As is traditonal, I made *view* lighter than *window*.  I gave View.*.Hover
-  the brightest values defined above, and Window.*.Normal the darkest values
+| As is traditonal, I made *view* lighter than *window*.  I gave View.?.Hover
+  the brightest values defined above, and Window.?.Normal the darkest values
   defined above.
 | The remaining values were derived by averaging the primitive values.
 |
@@ -82,3 +82,13 @@ Chroma
   brightness, but I don't know how to do this.  Suggestions welcome.
 | "Cardinal chromas" ocurr every 30° from 0° onwards.  
 | When using red, green, blue, *etc*, make sure to use their literal chromas.
+
+Usage
+================================================================================
+* All elements are coloured with a ?.?.Normal value.
+* Text and borders are coloured with a ?.fg.? value.
+* Other elements are coloured with a ?.bg.? colour.
+* Interactive elements are coloured with a View.?.? value if they are not just
+  text.
+* Elements that, when clicked, perform some action;  are coloured with a
+  ?.?.Hover value when a cursor is above them.
