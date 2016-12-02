@@ -44,7 +44,7 @@ Rationale
 * Green improves reading-speed.
 * Modern monitors are generally a colour temperature of 6500K.
 
-Colours
+Values
 ================================================================================
 | I divided the colours in an interface into two categories:  *view*, and
   *window*.  *View* is, for example, used for textboxes;  while *window* is used
@@ -73,3 +73,12 @@ Colours
 |         +----+--------+---------+------+--------+
 |         | fg | Normal | #BFBFBF | #CCC |  75.0% |
 +---------+----+--------+---------+------+--------+
+
+Chroma
+================================================================================
+| Wherever chroma is needed, simply add one of the cardinal chromas to one of
+  the values above at half saturation.  I would like to have their saturations
+  be such that all chroma'd values have approximately equal perceptual
+  brightness, but I don't know how to do this.  Suggestions welcome.
+| "Cardinal chromas" ocurr every 30° from 0° onwards.  
+| When using red, green, blue, *etc*, make sure to use their literal chromas.
