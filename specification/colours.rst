@@ -46,22 +46,30 @@ Rationale
 
 Colours
 ================================================================================
-+---------+----+--------+---------+------+------------+
-| Element | ?g | Type   | Full    | Half |    Notes   |
-+=========+====+========+=========+======+============+
-|         | bg | Hover  | #7F7F7F | #888 |  50.0% Lum |
-|         +----+--------+---------+------+------------+
-|         | bg | Normal | #5F5F5F | #666 |  37.5% Lum |
-| View    +----+--------+---------+------+------------+
-|         | fg | Hover  | #FFFFFF | #FFF | 100.0% Lum |
-|         +----+--------+---------+------+------------+
-|         | fg | Normal | #DFDFDF | #EEE |  87.5% Lum |
-+---------+----+--------+---------+------+------------+
-|         | bg | Hover  | #5F5F5F | #666 |  37.5% Lum |
-|         +----+--------+---------+------+------------+
-|         | bg | Normal | #3F3E3E | #444 |  25.0% Lum |
-| Window  +----+--------+---------+------+------------+
-|         | fg | Hover  | #DFDFDF | #EEE |  87.5% Lum |
-|         +----+--------+---------+------+------------+
-|         | fg | Normal | #BFBFBF | #CCC |  75.0% Lum |
-+---------+----+--------+---------+------+------------+
+| I divided the colours in an interface into two categories:  *view*, and
+  *window*.  *View* is, for example, used for textboxes;  while *window* is used
+  for, *ie*, the back-pane of a window.
+| As is traditonal, I made *view* lighter than *window*.  I gave View.*.Hover
+  the brightest values defined above, and Window.*.Normal the darkest values
+  defined above.
+| The remaining values were derived by averaging the primitive values.
+
++---------+----+--------+---------+------+--------+
+| Element | ?g | Type   | Full    | Half |   Lum  |
++=========+====+========+=========+======+========+
+|         | bg | Hover  | #7F7F7F | #888 |  50.0% |
+|         +----+--------+---------+------+--------+
+|         | bg | Normal | #5F5F5F | #666 |  37.5% |
+| View    +----+--------+---------+------+--------+
+|         | fg | Hover  | #FFFFFF | #FFF | 100.0% |
+|         +----+--------+---------+------+--------+
+|         | fg | Normal | #DFDFDF | #EEE |  87.5% |
++---------+----+--------+---------+------+--------+
+|         | bg | Hover  | #5F5F5F | #666 |  37.5% |
+|         +----+--------+---------+------+--------+
+|         | bg | Normal | #3F3E3E | #444 |  25.0% |
+| Window  +----+--------+---------+------+--------+
+|         | fg | Hover  | #DFDFDF | #EEE |  87.5% |
+|         +----+--------+---------+------+--------+
+|         | fg | Normal | #BFBFBF | #CCC |  75.0% |
++---------+----+--------+---------+------+--------+
