@@ -91,3 +91,4 @@ Usage
 #. Interactive controls are coloured with a View.?.? value.
 #. Elements that, when clicked, perform some action, are coloured with a
    ?.?.Hover value when a cursor is ontop of them.
+#. Shadows and glows use a 50% Lum grey, so that they never blend into anything.
