@@ -85,10 +85,9 @@ Chroma
 
 Usage
 ================================================================================
-* All elements are coloured with a ?.?.Normal value.
-* Text and borders are coloured with a ?.fg.? value.
-* Other elements are coloured with a ?.bg.? colour.
-* Interactive elements are coloured with a View.?.? value if they are not just
-  text.
-* Elements that, when clicked, perform some action;  are coloured with a
-  ?.?.Hover value when a cursor is above them.
+#. All elements are coloured with a ?.?.Normal value.
+#. Text and borders are coloured with a ?.fg.? value.
+#. Other elements are coloured with a ?.bg.? colour.
+#. Interactive controls are coloured with a View.?.? value.
+#. Elements that, when clicked, perform some action, are coloured with a
+  ?.?.Hover value when a cursor is ontop of them.
