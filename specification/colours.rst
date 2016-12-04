@@ -22,7 +22,7 @@ Rationale
 | These principles have the following implications for the theme:
 
 * {1} The foreground will be lighter than the background.
-* {3} Saturation will not be used ambiently.
+* {2,3} Saturation will not be used ambiently.
 * {5} This not only applies within the theme, but also to the environment around
   the screen.  As people work in a variety of settings, the theme's background-
   colours need to be as neutral a luminance as possible.
