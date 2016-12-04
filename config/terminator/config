@@ -1,0 +1,19 @@
+[global_config]
+  handle_size = 4
+  inactive_color_offset = 0.67
+  title_inactive_bg_color = "#3f3e3e"
+  title_inactive_fg_color = "#808080"
+  title_receive_bg_color = "#3f3e3e"
+  title_receive_fg_color = "#bfbf5f"
+  title_transmit_bg_color = "#3f3e3e"
+  title_transmit_fg_color = "#bfbfbf"
+[profiles]
+  [[default]]
+    background_color = "#5f5f5f"
+    background_darkness = 0.92
+    background_type = transparent
+    cursor_color = "#ffffff"
+    cursor_shape = ibeam
+    foreground_color = "#dfdfdf"
+    palette = "#dfdfdf:#e88282:#82e882:#dfdf6f:#ababff:#f396f3:#96f3f3:#5f5f5f:#ffffff:#ff8f8f:#8fff8f:#ffff7f:#aba
+bff:#ff9eff:#9effff:#7f7f7f"
