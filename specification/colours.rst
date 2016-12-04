@@ -104,4 +104,4 @@ Sources
 ================================================================================
 | The principles were largely derived from information available at
   http://www.fast-consulting.com/color/cp_toc.htm, which is itself largely a
-  summarization of Grandjean 1987.
+  summarization of (Grandjean, 1987).
