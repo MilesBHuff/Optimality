@@ -99,3 +99,9 @@ Usage
 #. Elements that, when clicked, perform some action, are coloured with a
    ?.?.Hover value when a cursor is ontop of them.
 #. Shadows and glows use a 50% Lum grey, so that they never blend into anything.
+
+Sources
+================================================================================
+| The principles were largely derived from information available at
+  http://www.fast-consulting.com/color/cp_toc.htm, which is itself largely a
+  summarization of Grandjean 1987.
