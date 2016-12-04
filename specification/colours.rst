@@ -49,9 +49,10 @@ Values
 | I divided the colours in an interface into two categories:  *view*, and
   *window*.  *View* is, for example, used for textboxes;  while *window* is used
   for, *ie*, the back-pane of a window.
-| As is traditonal, I made *view* lighter than *window*.  I gave View.?.Hover
-  the brightest values defined above, and Window.?.Normal the darkest values
-  defined above.
+| As items in *view* are more likely to be in the center of vision than items in
+  *window*, I made *view* lighter than *window*.  I gave View.?.Hover the
+  brightest values defined above, and Window.?.Normal the darkest values defined
+  above.
 | The remaining values were derived by averaging the primitive values.
 |
 +---------+----+--------+---------+------+--------+
@@ -76,12 +77,18 @@ Values
 
 Chroma
 ================================================================================
-| Wherever chroma is needed, simply add one of the cardinal chromas to one of
-  the values above at half saturation.  I would like to have their saturations
-  be such that all chroma'd values have approximately equal perceptual
-  brightness, but I don't know how to do this.  Suggestions welcome.
-| "Cardinal chromas" ocurr every 30° from 0° onwards.  
-| When using red, green, blue, *etc*, make sure to use their literal chromas.
+| To derive the chroma and luminance of a particular colour, set yellow's chroma
+  to 50 and blue's to 33, then set yellow's luminance to that of the comparable
+  non-coloured element, and blue's to one level (12.5%) higher.  All colours in-
+  between receive intermediate values, determined linearly.  
+| Although complicated, this is necessary to create legible coloured text.  
+  These exact values were decided per experience.  If anyone has a way to
+  calculate them in a way that equalizes perceptual brightness, I'd love to use
+  it.
+| All colours should be a multiple of 30°.  Multiples of 60° should be preferred
+  to multiples of 30° unless there is a good reason (such as a convention).  For
+  example, hyperlinks are usually around 210°, which is a multiple of 30°, but
+  not 60°.
 
 Usage
 ================================================================================
