@@ -24,4 +24,4 @@ your computer.
 Except where otherwise stated, these files are Copyright © 2016 by Miles
 Bradley Huff per LGPL3 and CC-BY-SA-4.
 
-The exact terms of copyright are found in "/LICENCE.txt".
+The exact terms of copyright are found in "/license.txt".
