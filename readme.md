@@ -7,8 +7,10 @@ colourscheme for many different applications.
 <!----------------------------------------------------------------------------->
 ## About
 
-This theme and colour-scheme are designed to minimize eyestrain.  Specifics
-regarding their design can be found in "/specification".
+This theme and colour-scheme are designed to minimize eyestrain.  It's also
+intended to support a very broad number of applications, so that a consistent
+look can be achieved throughout the desktop.  Specifics regarding their design
+can be found in "/specification".
 
 <!----------------------------------------------------------------------------->
 ## Usage
