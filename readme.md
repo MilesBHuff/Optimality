@@ -25,6 +25,6 @@ files on your computer.
 ## Licence
 
 Except where otherwise stated, these files are Copyright © 2016-2017 by Miles
-Bradley Huff per LGPL3 and CC-BY-SA-4.
+Bradley Huff per LGPL3 and CC BY-SA v4.
 
 The exact terms of copyright are found in "/license.txt".
