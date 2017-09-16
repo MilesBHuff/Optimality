@@ -4,8 +4,8 @@
 under the LGPL3 (the Lesser General Public License).  The contents of
 the GPL and the L extensions to the GPL can be found below, verbatim.
   Unless otherwise stated, all non-source-code in this project is 
-licensed under the CC-BY-SA 4.0 (Creative Commons Attribution Share-
-Alike 4.0).  The contents of the CC-BY-SA can be found below those of 
+licensed under the CC BY-SA 4.0 (Creative Commons Attribution Share-
+Alike 4.0).  The contents of the CC BY-SA can be found below those of 
 the GPL and LGPL, below.  
 
 ------------------------------------------------------------------------
