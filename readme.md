@@ -17,14 +17,14 @@ can be found in "/specification".
 
 Settings for various applications are stored in the "/config" folder.  Although
 the configuration files in this repository contain only colour- and theme-
-specific settings, some of them can contain more than just that -- so make sure
-that you don't just blindly overwrite any pre-existing settings-files on your
-computer.
+specific settings, some of them are supposed to contain more than just that --
+so make sure that you don't just blindly overwrite any pre-existing settings
+files on your computer.
 
 <!----------------------------------------------------------------------------->
 ## Licence
 
-Except where otherwise stated, these files are Copyright © 2016 by Miles
+Except where otherwise stated, these files are Copyright © 2016-2017 by Miles
 Bradley Huff per LGPL3 and CC-BY-SA-4.
 
 The exact terms of copyright are found in "/license.txt".
