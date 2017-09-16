@@ -79,8 +79,8 @@ Chroma
 ================================================================================
 | To derive the chroma and luminance of a particular colour, set yellow's chroma
   to 50% and blue's to 33%, then set yellow's luminance to that of the comparable
-  non-coloured element, and blue's to one level (12.5%) higher.  All colours in-
-  between receive intermediate values, determined linearly.  
+  non-coloured element, and blue's to one level (12.5%) higher.  All colours
+  in-between receive intermediate values, determined linearly.  
 | Although complicated, this is necessary to create legible coloured text.  
   These exact values were decided per experience.  If anyone has a way to
   calculate them in a way that equalizes perceptual brightness, I'd love to use
@@ -93,17 +93,17 @@ Chroma
 +---------+----+--------+---------+------+--------+--------+------+
 | Element | ?g | Type   | Full    | Half |   Lum  | Chroma |  Hue |
 +=========+====+========+=========+======+========+========+======+
-|         | fg | Normal | #CA7070 | #    |      % |      % |   0° |
+|         | fg | Normal | #CA7070 | #    | 79.17% | 44.44% |   0° |
 |         +----+--------+---------+------+--------+--------+------+
-|         | fg | Normal | #BFBF60 | #    |  75.0% |    50% |  60° |
+|         | fg | Normal | #BFBF60 | #    | 75.00% | 50.00% |  60° |
 |         +----+--------+---------+------+--------+--------+------+
-|         | fg | Normal | #70CA70 | #    |      % |      % | 120° |
+|         | fg | Normal | #70CA70 | #    | 79.17% | 44.44% | 120° |
 | Window  +----+--------+---------+------+--------+--------+------+
-|         | fg | Normal | #82D4D4 | #    |      % |      % | 180° |
+|         | fg | Normal | #82D4D4 | #    | 83.33% | 38.89% | 180° |
 |         +----+--------+---------+------+--------+--------+------+
-|         | fg | Normal | #9595DF | #    |  87.5% |    33% | 240° |
+|         | fg | Normal | #9595DF | #    | 87.50% | 33.33% | 240° |
 |         +----+--------+---------+------+--------+--------+------+
-|         | fg | Normal | #D482D4 | #    |      % |      % | 300° |
+|         | fg | Normal | #D482D4 | #    | 83.33% | 38.89% | 300° |
 +---------+----+--------+---------+------+--------+--------+------+
 
 Usage
