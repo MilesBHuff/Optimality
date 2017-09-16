@@ -78,7 +78,7 @@ Values
 Chroma
 ================================================================================
 | To derive the chroma and luminance of a particular colour, set yellow's chroma
-  to 50 and blue's to 33, then set yellow's luminance to that of the comparable
+  to 50% and blue's to 33%, then set yellow's luminance to that of the comparable
   non-coloured element, and blue's to one level (12.5%) higher.  All colours in-
   between receive intermediate values, determined linearly.  
 | Although complicated, this is necessary to create legible coloured text.  
@@ -89,6 +89,34 @@ Chroma
   to multiples of 30° unless there is a good reason (such as a convention).  For
   example, hyperlinks are usually around 210°, which is a multiple of 30°, but
   not 60°.
+|
++---------+----+--------+---------+------+--------+--------+------+
+| Element | ?g | Type   | Full    | Half |   Lum  | Chroma |  Hue |
++=========+====+========+=========+======+========+========+======+
+|         | fg | Normal | #       | #    |      % |      % |   0° |
+|         +----+--------+---------+------+--------+--------+------+
+|         | fg | Normal | #       | #    |  87.5% |    50% |  60° |
+|         +----+--------+---------+------+--------+--------+------+
+|         | fg | Normal | #       | #    |      % |      % | 120° |
+| View    +----+--------+---------+------+--------+--------+------+
+|         | fg | Normal | #       | #    |      % |      % | 180° |
+|         +----+--------+---------+------+--------+--------+------+
+|         | fg | Normal | #       | #    |   100% |    33% | 240° |
+|         +----+--------+---------+------+--------+--------+------+
+|         | fg | Normal | #       | #    |      % |      % | 300° |
++---------+----+--------+---------+------+--------+--------+------+
+|         | fg | Normal | #       | #    |      % |      % |   0° |
+|         +----+--------+---------+------+--------+--------+------+
+|         | fg | Normal | #       | #    |  75.0% |    50% |  60° |
+|         +----+--------+---------+------+--------+--------+------+
+|         | fg | Normal | #       | #    |      % |      % | 120° |
+| Window  +----+--------+---------+------+--------+--------+------+
+|         | fg | Normal | #       | #    |      % |      % | 180° |
+|         +----+--------+---------+------+--------+--------+------+
+|         | fg | Normal | #       | #    |  87.5% |    33% | 240° |
+|         +----+--------+---------+------+--------+--------+------+
+|         | fg | Normal | #       | #    |      % |      % | 300° |
++---------+----+--------+---------+------+--------+--------+------+
 
 Usage
 ================================================================================
