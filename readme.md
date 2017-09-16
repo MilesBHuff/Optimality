@@ -15,10 +15,11 @@ can be found in "/specification".
 <!----------------------------------------------------------------------------->
 ## Usage
 
-Settings for various applications are stored in the "/config" folder.  Some of
-these applications' settings-files are not colour- or theme-specific, so make
-sure that you don't just blindly overwrite any pre-existing settings-files on
-your computer.
+Settings for various applications are stored in the "/config" folder.  Although
+the configuration files in this repository contain only colour- and theme-
+specific settings, some of them can contain more than just that -- so make sure
+that you don't just blindly overwrite any pre-existing settings-files on your
+computer.
 
 <!----------------------------------------------------------------------------->
 ## Licence
