@@ -1,0 +1,187 @@
+STYLE WindowBackground
+	PRIMARYCOL        3f3f3fea
+	SECONDARYCOL      3f3f3fea
+	HORIZONTAL        1
+END
+
+STYLE WindowTitleBar
+	PRIMARYCOL        3f3f3fea
+	SECONDARYCOL      3f3f3fea
+	HORIZONTAL        1
+END
+
+STYLE WindowOuterBorder
+	PRIMARYCOL        bfbfbfea
+	SECONDARYCOL      bfbfbfea
+	HORIZONTAL        1
+END
+
+STYLE WindowInnerBorder
+	PRIMARYCOL        bfbfbfea
+	SECONDARYCOL      bfbfbfea
+	HORIZONTAL        1
+END
+
+STYLE ButtonBackground
+	PRIMARYCOL        5f5f5fea
+	SECONDARYCOL      5f5f5fea
+	HORIZONTAL        1
+END
+
+STYLE ButtonHighlighted
+	PRIMARYCOL        7f7f7fea
+	SECONDARYCOL      7f7f7fea
+	HORIZONTAL        1
+END
+
+STYLE ButtonClicked
+	PRIMARYCOL        3f3f3fea
+	SECONDARYCOL      3f3f3fea
+	HORIZONTAL        1
+END
+
+STYLE ButtonBorder
+	PRIMARYCOL        dfdfdfea
+	SECONDARYCOL      dfdfdfea
+	HORIZONTAL        1
+END
+
+STYLE BoxBackground
+	PRIMARYCOL        5f5f5fea
+	SECONDARYCOL      5f5f5fea
+	HORIZONTAL        1
+END
+
+STYLE BoxBorder
+	PRIMARYCOL        dfdfdfea
+	SECONDARYCOL      dfdfdfea
+	HORIZONTAL        1
+END
+
+STYLE InputBackground
+	PRIMARYCOL        5f5f5fea
+	SECONDARYCOL      5f5f5fea
+	HORIZONTAL        1
+END
+
+STYLE InputBorder
+	PRIMARYCOL        dfdfdfea
+	SECONDARYCOL      dfdfdfea
+	HORIZONTAL        1
+END
+
+STYLE FontWindowTitle
+	PRIMARYCOL        bfbfbfea
+	SECONDARYCOL      bfbfbfea
+	HORIZONTAL        1
+	FONT              zerothre
+	NEGATIVE          0
+	UPPERCASE         0
+	SIZE              18.00
+END
+
+STYLE FontButton
+	PRIMARYCOL        bfbfbfea
+	SECONDARYCOL      bfbfbfea
+	HORIZONTAL        1
+	FONT              zerothre
+	NEGATIVE          0
+	UPPERCASE         1
+	SIZE              12.00
+END
+
+STYLE WorldCoastlines
+	PRIMARYCOL        3f3f3fff
+	SECONDARYCOL      3f3f3fff
+	HORIZONTAL        0
+END
+
+STYLE WorldBorders
+	PRIMARYCOL        3f3f3fff
+	SECONDARYCOL      3f3f3fff
+	HORIZONTAL        0
+END
+
+STYLE WorldWater
+	PRIMARYCOL        9595dfff
+	SECONDARYCOL      82d4d4ff
+	HORIZONTAL        0
+END
+
+STYLE WorldLand
+	PRIMARYCOL        70ca70ff
+	SECONDARYCOL      bfbf60ff
+	HORIZONTAL        0
+END
+
+STYLE TooltipBackground
+	PRIMARYCOL        5f5f5fea
+	SECONDARYCOL      5f5f5fea
+	HORIZONTAL        1
+END
+
+STYLE TooltipBorder
+	PRIMARYCOL        dfdfdfea
+	SECONDARYCOL      dfdfdfea
+	HORIZONTAL        1
+END
+
+STYLE FontTooltip
+	PRIMARYCOL        dfdfdfea
+	SECONDARYCOL      dfdfdfea
+	HORIZONTAL        1
+	FONT              zerothre
+	NEGATIVE          0
+	UPPERCASE         1
+	SIZE              12.00
+END
+
+STYLE PopupBackground
+	PRIMARYCOL        3f3f3fea
+	SECONDARYCOL      3f3f3fea
+	HORIZONTAL        1
+END
+
+STYLE PopupTitleBar
+	PRIMARYCOL        3f3f3fea
+	SECONDARYCOL      3f3f3fea
+	HORIZONTAL        1
+END
+
+STYLE PopupBorder
+	PRIMARYCOL        bfbfbfea
+	SECONDARYCOL      bfbfbfea
+	HORIZONTAL        1
+END
+
+STYLE PopupHighlight
+	PRIMARYCOL        5f5f5fea
+	SECONDARYCOL      5f5f5fea
+	HORIZONTAL        1
+END
+
+STYLE PopupSelection
+	PRIMARYCOL        5f5f5fea
+	SECONDARYCOL      5f5f5fea
+	HORIZONTAL        1
+END
+
+STYLE FontPopupTitle
+	PRIMARYCOL        bfbfbfea
+	SECONDARYCOL      bfbfbfea
+	HORIZONTAL        1
+	FONT              zerothre
+	NEGATIVE          0
+	UPPERCASE         0
+	SIZE              12.00
+END
+
+STYLE FontPopup
+	PRIMARYCOL        bfbfbfea
+	SECONDARYCOL      bfbfbfea
+	HORIZONTAL        1
+	FONT              zerothre
+	NEGATIVE          0
+	UPPERCASE         1
+	SIZE              12.00
+END
