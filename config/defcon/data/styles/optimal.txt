@@ -17,8 +17,8 @@ STYLE WindowOuterBorder
 END
 
 STYLE WindowInnerBorder
-	PRIMARYCOL        bfbfbfea
-	SECONDARYCOL      bfbfbfea
+	PRIMARYCOL        bfbfbf00
+	SECONDARYCOL      bfbfbf00
 	HORIZONTAL        1
 END
 
@@ -77,7 +77,7 @@ STYLE FontWindowTitle
 	FONT              zerothre
 	NEGATIVE          0
 	UPPERCASE         0
-	SIZE              18.00
+	SIZE              15.00
 END
 
 STYLE FontButton
@@ -86,32 +86,32 @@ STYLE FontButton
 	HORIZONTAL        1
 	FONT              zerothre
 	NEGATIVE          0
-	UPPERCASE         1
-	SIZE              12.00
+	UPPERCASE         0
+	SIZE              15.00
 END
 
 STYLE WorldCoastlines
 	PRIMARYCOL        3f3f3fff
 	SECONDARYCOL      3f3f3fff
-	HORIZONTAL        0
+	HORIZONTAL        1
 END
 
 STYLE WorldBorders
 	PRIMARYCOL        3f3f3fff
 	SECONDARYCOL      3f3f3fff
-	HORIZONTAL        0
+	HORIZONTAL        1
 END
 
 STYLE WorldWater
 	PRIMARYCOL        9595dfff
 	SECONDARYCOL      82d4d4ff
-	HORIZONTAL        0
+	HORIZONTAL        1
 END
 
 STYLE WorldLand
 	PRIMARYCOL        70ca70ff
 	SECONDARYCOL      bfbf60ff
-	HORIZONTAL        0
+	HORIZONTAL        1
 END
 
 STYLE TooltipBackground
@@ -132,8 +132,8 @@ STYLE FontTooltip
 	HORIZONTAL        1
 	FONT              zerothre
 	NEGATIVE          0
-	UPPERCASE         1
-	SIZE              12.00
+	UPPERCASE         0
+	SIZE              15.00
 END
 
 STYLE PopupBackground
@@ -173,7 +173,7 @@ STYLE FontPopupTitle
 	FONT              zerothre
 	NEGATIVE          0
 	UPPERCASE         0
-	SIZE              12.00
+	SIZE              15.00
 END
 
 STYLE FontPopup
@@ -182,6 +182,6 @@ STYLE FontPopup
 	HORIZONTAL        1
 	FONT              zerothre
 	NEGATIVE          0
-	UPPERCASE         1
-	SIZE              12.00
+	UPPERCASE         0
+	SIZE              15.00
 END
