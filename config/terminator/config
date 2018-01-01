@@ -1,11 +1,11 @@
 [global_config]
   handle_size = 4
   inactive_color_offset = 0.67
-  title_inactive_bg_color = "#3f3e3e"
+  title_inactive_bg_color = "#3f3f3f"
   title_inactive_fg_color = "#808080"
-  title_receive_bg_color = "#3f3e3e"
+  title_receive_bg_color = "#3f3f3f"
   title_receive_fg_color = "#bfbf5f"
-  title_transmit_bg_color = "#3f3e3e"
+  title_transmit_bg_color = "#3f3f3f"
   title_transmit_fg_color = "#bfbfbf"
 [profiles]
   [[default]]
