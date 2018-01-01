@@ -2,6 +2,10 @@
 indent_size  = 4
 indent_style = tab
 
-[*.{bash,md,rst,sh,zsh}]
+[*.{bash,sh,zsh}]
+indent_size  = 2
+indent_style = tab
+
+[*.{md,rst}]
 indent_size  = 2
 indent_style = space
