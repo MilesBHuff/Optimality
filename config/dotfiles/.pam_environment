@@ -1,0 +1,2 @@
+GREP_COLORS='*=0:sl=0:cx=0:mt=7;1:ms=7;1:mc=7;1:fn=94:ln=95:bn=91:se=0'
+LS_COLORS='*=0:fi=0:ex=32:di=34:bd=33:cd=33:pi=35:so=35:ln=36:or=31:mi=31'
