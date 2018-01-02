@@ -1,18 +1,17 @@
 [global_config]
   handle_size = 4
   inactive_color_offset = 0.67
-  title_inactive_bg_color = "#3f3f3f"
-  title_inactive_fg_color = "#808080"
-  title_receive_bg_color = "#3f3f3f"
-  title_receive_fg_color = "#bfbf5f"
-  title_transmit_bg_color = "#3f3f3f"
-  title_transmit_fg_color = "#bfbfbf"
+  title_inactive_bg_color = "#212121"
+  title_inactive_fg_color = "#979797"
+  title_receive_bg_color = "#212121"
+  title_receive_fg_color = "#e95ce9"
+  title_transmit_bg_color = "#212121"
+  title_transmit_fg_color = "#0fb00f"
+
 [profiles]
   [[default]]
-    background_color = "#5f5f5f"
-    background_darkness = 0.92
-    background_type = transparent
+    background_color = "#585858"
     cursor_color = "#ffffff"
     cursor_shape = ibeam
-    foreground_color = "#dfdfdf"
-    palette = "#dfdfdf:#e88282:#82e882:#dfdf6f:#ababff:#f396f3:#96f3f3:#5f5f5f:#ffffff:#ff8f8f:#8fff8f:#ffff7f:#ababff:#ff9eff:#9effff:#7f7f7f"
+    foreground_color = "#d0d0d0"
+    palette = "#585858:#ffa5a5:#67f867:#e2e252:#a5a5ff:#ffa5ff:#6cefef:#dbdbdb:#212121:#e95c5c:#0fb00f:#9c9c00:#5c5ce9:#e95ce9:#00a8a8:#979797"
