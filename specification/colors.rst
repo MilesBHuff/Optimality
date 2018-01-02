@@ -9,29 +9,23 @@ Rationale
   eyestrain.  I've taken the following principles to heart while designing it:
 
 1. Brighter things are more noticeable than darker things.
-2. More saturated things are more noticeable than less saturated things at the
-   same luminance.
+2. CIELAB lightness relatively accurately represents perceptual brightness, but
+   always results in 0% saturation at 100% and 0% lightness.
 3. Cones in the eyes become tired seeing one particular color over a prolonged
-   time.
+   period of time, resulting in that colour appearing less vibrant.
 4. Primary and Secondary colours in the center of vision should not differ by
    more than a ratio of 3:1.
-5. Colours present in non-peripheral sight should be no different than a ratio
+5. Colours present in peripheral sight should be no different than a ratio
    of 1:10.
-6. Maximise the contrast within that 3:1 limit, with no control leaving it.
 
 | These principles have the following implications for the theme:
 
 * {1} The foreground will be lighter than the background.
-* {2,3} Saturation will not be used ambiently.
-* {5} This not only applies within the theme, but also to the environment around
-  the screen.  As people work in a variety of settings, the theme's background-
-  colours need to be as neutral a luminance as possible.
-* {4, 5, 6} The brightest foreground-colour is 100% luminant.
-* {4, 5, 6} The darkest background-colour is 25% luminant.
-* Given the above two items, the darkest foreground-colour and the lightest
-  background-colour will be ≈67% luminant.
-* {6} Borders will use foreground-colours, so that the darkest colours can be
-  used for the backgrounds, thus maximizing contrast.
+* {2, 4, 5} All colours must be between 12.5% and 87.5% lightness.
+* {3} The base colours must be fully desaturated.
+* {5} This not only applies to the contents of the screen, but also to the
+  environment around it.  As people work in a variety of settings, the theme's
+  background-colours need to be as neutral a lightness as possible.
 
 | In the past, this colour-scheme had a green tint;  but this was later removed,
   after the addition of principle #3.  
@@ -39,84 +33,80 @@ Rationale
 
 * Green is seen more or less equally across the eye, while other chromas tend to
   become desaturated in the peripherals.
-* Blue is ineffective as a foreground colour.
-* Red-Orange on Cyan-Blue improves reading retention.
 * Green improves reading-speed.
-* Modern monitors are generally a colour temperature of 6500K.
+* Red-Orange on Cyan-Blue improves reading retention.
+* Blue is ineffective as a foreground colour.
 
 Values
 ================================================================================
 | I divided the colours in an interface into two categories:  *view*, and
-  *window*.  *View* is, for example, used for textboxes;  while *window* is used
-  for, *ie*, the back-pane of a window.
+  *window*.  *View* is used for interactive elements, such as textboxes and
+  buttons;  while *window* is used for, *ie*, the back-pane of a window.
 | As items in *view* are more likely to be in the center of vision than items in
-  *window*, I made *view* lighter than *window*.  I gave View.?.Hover the
-  brightest values defined above, and Window.?.Normal the darkest values defined
-  above.
-| The remaining values were derived by averaging the primitive values.
-|
-+---------+----+--------+---------+------+--------+
-| Element | ?g | Type   | Full    | Half |   Lum  |
-+=========+====+========+=========+======+========+
-|         | bg | Hover  | #7F7F7F | #888 |  50.0% |
-|         +----+--------+---------+------+--------+
-|         | bg | Normal | #5F5F5F | #666 |  37.5% |
-| View    +----+--------+---------+------+--------+
-|         | fg | Hover  | #FFFFFF | #FFF | 100.0% |
-|         +----+--------+---------+------+--------+
-|         | fg | Normal | #DFDFDF | #EEE |  87.5% |
-+---------+----+--------+---------+------+--------+
-|         | bg | Hover  | #5F5F5F | #666 |  37.5% |
-|         +----+--------+---------+------+--------+
-|         | bg | Normal | #3F3F3F | #444 |  25.0% |
-| Window  +----+--------+---------+------+--------+
-|         | fg | Hover  | #DFDFDF | #EEE |  87.5% |
-|         +----+--------+---------+------+--------+
-|         | fg | Normal | #BFBFBF | #CCC |  75.0% |
-+---------+----+--------+---------+------+--------+
+  *window*, I made *view* lighter than *window*.
+| To maximise contrast, *view*'s foreground got the highest lightness, and
+  *window*'s background the lowest.
+| Hover (sel) colours are an average of the normal background and foreground
+  colours.
+
++---------+------+---------+------+-----------+
+| Element | Type | Full    | Half | Lightness |
++=========+======+=========+======+===========+
+|         | bg   | #212121 | #222 |     12.5% |
+|         +------+---------+------+-----------+
+| Window  | sel  | #585858 | #555 |     37.5% |
+|         +------+---------+------+-----------+
+|         | fg   | #979797 | #999 |     62.5% |
++---------+------+---------+------+-----------+
+|         | bg   | #585858 | #555 |     37.5% |
+|         +------+---------+------+-----------+
+| View    | sel  | #979797 | #999 |     62.5% |
+|         +------+---------+------+-----------+
+|         | fg   | #DBDBDB | #DDD |     87.5% |
++---------+------+---------+------+-----------+
 
 Chroma
 ================================================================================
-| To derive the chroma and luminance of a particular colour, set yellow's chroma
-  to 50% and blue's to 33%, then set yellow's luminance to that of the comparable
-  non-coloured element, and blue's to one level (12.5%) higher.  All colours
-  in-between receive intermediate values, determined linearly.  
-| Although complicated, this is necessary to create legible coloured text.  
-  These exact values were decided per experience.  If anyone has a way to
-  calculate them in a way that equalizes perceptual brightness, I'd love to use
-  it.
-| All colours should be a multiple of 30°.  Multiples of 60° should be preferred
-  to multiples of 30° unless there is a good reason (such as a convention).  For
+| Useful when calculating:  http://www.colorizer.org
+| All hues should be a multiple of 30°.  Multiples of 60° should be preferred to
+  multiples of 30° unless there is a good reason (such as a convention).  For
   example, hyperlinks are usually around 210°, which is a multiple of 30°, but
   not 60°.
-|
-+---------+----+--------+---------+------+---------+--------+------+
-| Element | ?g | Type   | Full    | Half |   Lum   | Chroma |  Hue |
-+=========+====+========+=========+======+=========+========+======+
-|         | fg | Normal | #EA8282 | #E88 |  91.67% | 44.44% |   0° |
-|         +----+--------+---------+------+---------+--------+------+
-|         | fg | Normal | #DFDF70 | #DD7 |  87.50% | 50.00% |  60° |
-|         +----+--------+---------+------+---------+--------+------+
-|         | fg | Normal | #82EA82 | #8E8 |  91.67% | 44.44% | 120° |
-| View    +----+--------+---------+------+---------+--------+------+
-|         | fg | Normal | #95F4F4 | #9FF |  95.83% | 38.89% | 180° |
-|         +----+--------+---------+------+---------+--------+------+
-|         | fg | Normal | #ABABFF | #AAF | 100.00% | 33.33% | 240° |
-|         +----+--------+---------+------+---------+--------+------+
-|         | fg | Normal | #F495F4 | #F9F |  95.83% | 38.89% | 300° |
-+---------+----+--------+---------+------+---------+--------+------+
-|         | fg | Normal | #CA7070 | #C77 |  79.17% | 44.44% |   0° |
-|         +----+--------+---------+------+---------+--------+------+
-|         | fg | Normal | #BFBF60 | #BB6 |  75.00% | 50.00% |  60° |
-|         +----+--------+---------+------+---------+--------+------+
-|         | fg | Normal | #70CA70 | #7C7 |  79.17% | 44.44% | 120° |
-| Window  +----+--------+---------+------+---------+--------+------+
-|         | fg | Normal | #82D4D4 | #8DD |  83.33% | 38.89% | 180° |
-|         +----+--------+---------+------+---------+--------+------+
-|         | fg | Normal | #9595DF | #99D |  87.50% | 33.33% | 240° |
-|         +----+--------+---------+------+---------+--------+------+
-|         | fg | Normal | #D482D4 | #D8D |  83.33% | 38.89% | 300° |
-+---------+----+--------+---------+------+---------+--------+------+
+| HSV is set so that S and V are both 75% (this allows room for the next step to
+  work)
+| The CIELAB lightness is set to the foreground lightness.
+| The hue and lightness are repeatedly set to their desired values until both
+  settle on them.
+| 0° and 240°, due to being at the edges of human perception, have to use 300°'s
+  SVs, or else they would have almost no saturation.
+
++---------+---------+------+------+
+| Element | Full    | Half |  Hue |
++=========+=========+======+======+
+|         | #______ | #___ |   0° |
+|         +---------+------+------+
+|         | #______ | #___ |  60° |
+|         +---------+------+------+
+|         | #______ | #___ | 120° |
+| View    +---------+------+------+
+|         | #______ | #___ | 180° |
+|         +---------+------+------+
+|         | #______ | #___ | 240° |
+|         +---------+------+------+
+|         | #______ | #___ | 300° |
++---------+---------+------+------+
+|         | #______ | #___ |   0° |
+|         +---------+------+------+
+|         | #______ | #___ |  60° |
+|         +---------+------+------+
+|         | #______ | #___ | 120° |
+| Window  +---------+------+------+
+|         | #______ | #___ | 180° |
+|         +---------+------+------+
+|         | #______ | #___ | 240° |
+|         +---------+------+------+
+|         | #______ | #___ | 300° |
++---------+---------+------+------+
 
 Usage
 ================================================================================
@@ -125,8 +115,13 @@ Usage
 #. Other elements are coloured with a ?.bg.? colour.
 #. Interactive controls are coloured with a View.?.? value.
 #. Elements that, when clicked, perform some action, are coloured with a
-   ?.?.Hover value when a cursor is ontop of them.
+   ?.Sel value when a cursor is ontop of them.
 #. Shadows and glows use a 50% Lum grey, so that they never blend into anything.
+#. Colour should be used to emphasize (but never to differentiate, because
+   colour-blindness) functions.
+#. Wherever possible, magenta and green should be the colours that you use, since
+   all three kinds of partial colour-blindness can distinguish these two colours
+   without issue.
 
 Sources
 ================================================================================
