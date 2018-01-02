@@ -110,13 +110,11 @@ Chroma
 
 Usage
 ================================================================================
-#. All elements are coloured with a ?.?.Normal value.
-#. Text and borders are coloured with a ?.fg.? value.
-#. Other elements are coloured with a ?.bg.? colour.
-#. Interactive controls are coloured with a View.?.? value.
+#. Text and borders are coloured with a foreground colour.
+#. Other elements are coloured with a background colour.
+#. Interactive controls are coloured with a *view* value.
 #. Elements that, when clicked, perform some action, are coloured with a
-   ?.Sel value when a cursor is ontop of them.
-#. Shadows and glows use a 50% Lum grey, so that they never blend into anything.
+   *Sel* value when a cursor is ontop of them.
 #. Colour should be used to emphasize (but never to differentiate, because
    colour-blindness) functions.
 #. Wherever possible, magenta and green should be the colours that you use, since
