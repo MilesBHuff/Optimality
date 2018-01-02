@@ -39,14 +39,14 @@ Rationale
 
 Values
 ================================================================================
-| I divided the colours in an interface into two categories:  *view*, and
+* I divided the colours in an interface into two categories:  *view*, and
   *window*.  *View* is used for interactive elements, such as textboxes and
   buttons;  while *window* is used for, *ie*, the back-pane of a window.
-| As items in *view* are more likely to be in the center of vision than items in
+* As items in *view* are more likely to be in the center of vision than items in
   *window*, I made *view* lighter than *window*.
-| To maximise contrast, *view*'s foreground got the highest lightness, and
+* To maximise contrast, *view*'s foreground got the highest lightness, and
   *window*'s background the lowest.
-| Hover (sel) colours are an average of the normal background and foreground
+* Hover (sel) colours are an average of the normal background and foreground
   colours.
 
 +---------+------+---------+------+-----------+
@@ -67,33 +67,33 @@ Values
 
 Chroma
 ================================================================================
-| Useful when calculating:  http://www.colorizer.org
-| All hues should be a multiple of 30°.  Multiples of 60° should be preferred to
+* Useful when calculating:  http://www.colorizer.org
+* All hues should be a multiple of 30°.  Multiples of 60° should be preferred to
   multiples of 30° unless there is a good reason (such as a convention).  For
   example, hyperlinks are usually around 210°, which is a multiple of 30°, but
   not 60°.
-| HSV is set so that S and V are both 75% (this allows room for the next step to
+* HSV is set so that S and V are both 75% (this allows room for the next step to
   work)
-| The CIELAB lightness is set to the foreground lightness.
-| The hue and lightness are repeatedly set to their desired values until both
+* The CIELAB lightness is set to the foreground lightness.
+* The hue and lightness are repeatedly set to their desired values until both
   settle on them.
-| 0° and 240°, due to being at the edges of human perception, have to use 300°'s
+* 0° and 240°, due to being at the edges of human perception, have to use 300°'s
   SVs, or else they would have almost no saturation.
 
 +---------+---------+------+------+
 | Element | Full    | Half |  Hue |
 +=========+=========+======+======+
-|         | #______ | #___ |   0° |
+|         | #FFA5A5 | #FAA |   0° |
 |         +---------+------+------+
-|         | #______ | #___ |  60° |
+|         | #E2E252 | #EE5 |  60° |
 |         +---------+------+------+
-|         | #______ | #___ | 120° |
+|         | #67F867 | #6F6 | 120° |
 | View    +---------+------+------+
-|         | #______ | #___ | 180° |
+|         | #6CEFEF | #6EE | 180° |
 |         +---------+------+------+
-|         | #______ | #___ | 240° |
+|         | #A5A5FF | #AAF | 240° |
 |         +---------+------+------+
-|         | #______ | #___ | 300° |
+|         | #FFA5FF | #FAF | 300° |
 +---------+---------+------+------+
 |         | #______ | #___ |   0° |
 |         +---------+------+------+
