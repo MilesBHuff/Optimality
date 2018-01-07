@@ -68,46 +68,50 @@ Values
 Chroma
 ================================================================================
 * Useful when calculating:  http://www.colorizer.org
-* All hues should be a multiple of 30°.  Multiples of 60° should be preferred to
-  multiples of 30° unless there is a good reason (such as a convention).  For
-  example, hyperlinks are usually around 210°, which is a multiple of 30°, but
-  not 60°.
-* HSV is set so that S and V are both 75% (this allows room for the next step to
-  work)
-* The CIELAB lightness is set to the foreground lightness.
-* The hue and lightness are repeatedly set to their desired values until both
+* Chromas are constructed first by hues that are of multiples of 60°, then by
+  those that are multiples of 30°, and so-on.
+* For each round of multiples, the following steps are taken:
+
+  * HSV is set so that S and V are both 75% (this allows room for the next step
+    to work)
+  * The CIELAB lightness is set to the foreground lightness.
+  * The hue and lightness are repeatedly set to their desired values until both
   settle on them.
-* 0° and 240°, due to being at the edges of human perception, have to use 300°'s
-  SVs, or else they would have almost no saturation.
+  * If the saturation is less than 33%, set it to 33%.
+
+* When these chromas are used, all multiples of 60° should be used before any
+  multiples of 30°, and so-on;  unless there is a good reason (such as a
+  convention) to do otherwise.  For example, hyperlinks are usually around 210°,
+  which is a multiple of 30°, but not 60°.
 
 +---------+-------------+----------+------+
 | Element |     Full    |   Half   |  Hue |
 +=========+=============+==========+======+
-|         | ``#FFA5A5`` | ``#FAA`` |   0° |
+|         | ``#FFAAAA`` | ``#FAA`` |   0° |
 |         +-------------+----------+------+
-|         | ``#______`` | ``#___`` |  30° |
+|         | ``#FFD4A8`` | ``#FDA`` |  30° |
 |         +-------------+----------+------+
 |         | ``#E2E252`` | ``#EE5`` |  60° |
 |         +-------------+----------+------+
-|         | ``#______`` | ``#___`` |  90° |
+|         | ``#A8EF60`` | ``#AE6`` |  90° |
 |         +-------------+----------+------+
 |         | ``#67F867`` | ``#6F6`` | 120° |
 |         +-------------+----------+------+
-|         | ``#______`` | ``#___`` | 150° |
+|         | ``#6EF4B1`` | ``#6FB`` | 150° |
 | View    +-------------+----------+------+
 |         | ``#6CEFEF`` | ``#6EE`` | 180° |
 |         +-------------+----------+------+
-|         | ``#88BFF6`` | ``#8BF`` | 210° |
+|         | ``#AAD5FF`` | ``#ADF`` | 210° |
 |         +-------------+----------+------+
-|         | ``#A5A5FF`` | ``#AAF`` | 240° |
+|         | ``#AAAAFF`` | ``#AAF`` | 240° |
 |         +-------------+----------+------+
-|         | ``#D2A5FF`` | ``#DAF`` | 270° |
+|         | ``#D5AAFF`` | ``#DAF`` | 270° |
 |         +-------------+----------+------+
 |         | ``#FFA5FF`` | ``#FAF`` | 300° |
 |         +-------------+----------+------+
-|         | ``#______`` | ``#___`` | 330° |
+|         | ``#FFAAD5`` | ``#FAD`` | 330° |
 +---------+-------------+----------+------+
-|         | ``#E95C5C`` | ``#E55`` |   0° |
+|         | ``#FF6262`` | ``#F66`` |   0° |
 |         +-------------+----------+------+
 |         | ``#______`` | ``#___`` |  30° |
 |         +-------------+----------+------+
@@ -123,7 +127,7 @@ Chroma
 |         +-------------+----------+------+
 |         | ``#2D7BC8`` | ``#27C`` | 210° |
 |         +-------------+----------+------+
-|         | ``#5C5CE9`` | ``#55E`` | 240° |
+|         | ``#8A8AFF`` | ``#88F`` | 240° |
 |         +-------------+----------+------+
 |         | ``#A35CE9`` | ``#A5E`` | 270° |
 |         +-------------+----------+------+
