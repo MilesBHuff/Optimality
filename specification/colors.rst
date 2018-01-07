@@ -76,7 +76,7 @@ Chroma
     to work)
   * The CIELAB lightness is set to the foreground lightness.
   * The hue and lightness are repeatedly set to their desired values until both
-  settle on them.
+    settle on them.
   * If the saturation is less than 33%, set it to 33%.
 
 * When these chromas are used, all multiples of 60° should be used before any
