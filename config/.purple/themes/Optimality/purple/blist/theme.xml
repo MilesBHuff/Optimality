@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme
+	type="pidgin buddy list"
+	name="Optimality"
+	author="Miles B Huff &lt;MilesBHuff@Users.NoReply.Github.com&gt;"
+	image=""
+>
+	<description>Optimality color scheme for Pidgin's buddylist</description>
+
+	<groups>
+		<collapsed background="#595959" color="#bababa" font=""/>
+		<expanded background="#595959" color="#e6e6e6" font=""/>
+	</groups>
+
+	<buddys>
+		<placement
+			buddy_icon="0"
+			status_icon="1"
+			name="2"
+			emblem="3"
+			protocol_icon="4"
+			show_status="0"
+		/>
+
+		<contact_text color="#e6e6e6" font=""/>
+		<status_text color="#bababa" font=""/>
+
+		<online_text color="#ffffff" font=""/>
+		<idle_text color="#e6e6e6" font=""/>
+		<away_text color="#bababa" font=""/>
+		<offline_text color="#bababa" font=""/>
+
+		<message_text color="#e6e6e6" font=""/>
+		<message_nick_said_text color="#bababa" font=""/>
+
+		<background color="#676767"/>
+	</buddys>
+
+	<blist color="#676767"/>
+	<selected background="#777777" color="#ffffff"/>
+</theme>
