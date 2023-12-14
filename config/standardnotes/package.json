@@ -1,13 +1,16 @@
 {
-  "name": "@standardnotes/dracula-theme",
-  "version": "1.2.0",
+  "name": "@standardnotes/optimality",
+  "version": "4.0.0",
   "main": "main.css",
-  "author": "Standard Notes",
+  "contributors": [
+	"Standard Notes",
+	"Miles B Huff"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "sn": {
-    "name": "Dracula",
+    "name": "Optimality",
     "content_type": "SN|Theme",
     "area": "themes",
 	"main": "main.css",
