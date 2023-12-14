@@ -1,7 +1,7 @@
 {
   "name": "@standardnotes/dracula-theme",
   "version": "1.2.0",
-  "main": "dist/dist.css",
+  "main": "main.css",
   "author": "Standard Notes",
   "publishConfig": {
     "access": "public"
@@ -10,14 +10,7 @@
     "name": "Dracula",
     "content_type": "SN|Theme",
     "area": "themes",
-    "main": "dist/dist.css",
+	"main": "main.css",
     "showInGallery": true
-  },
-  "scripts": {
-    "build": "webpack --entry ./src/main.scss --config ../theme.webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 0"
-  },
-  "devDependencies": {
-    "webpack": "*"
   }
 }
