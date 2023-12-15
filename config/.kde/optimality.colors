@@ -1,3 +1,5 @@
+;TODO: Define hued colors.  The present such colors are actually not from this model, and instead date to experiments from years prior with different methodologies.
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; DOCUMENTATION                                                              ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -5,7 +7,7 @@
 ; This is a mid-contrast, mid-grey theme.  It strikes a balance between light and dark themes, and works well with both light and dark images and websites.
 ; All base colors are completely desaturated.  This is because staring at one color for long periods causes the eye-cones that process that color to become tired, and this can actually change your visual perception to where colors no longer appear to render "true".
 ; Colors are generated with HSL*, which uses the HS from HSL and the L* from L*a*b*.  This provides near-perfect luminance control. (HSL's luminance is very far from human perception.)
-; All colors are at standard hues and use the same CIELAB luminance as the *-Normal-Text.
+; All colors are at standard hues and use the same CIELAB luminance as the *-Normal-Text, unless that would result in white, in which case the CIELAB luminance of the *-Inactive-Text is used.
 ; Active text is brightest, Normal text is medium, and Inactive text is darkest.
 ; Each step in text brightness is 1.25CR from the last.  1.25CR of difference seems to me to be around the right amount for ensuring that subtle differences are still visible.
 ; Each set of base colors shifts their text down by 1.25CR.
@@ -64,7 +66,7 @@ IntensityAmount=-0.5
 IntensityEffect=2
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; LIGHT                                                                      ;;
+;; LIGHTER                                                                    ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [Colors:Selection]
@@ -79,14 +81,14 @@ DecorationFocus=#848484
 BackgroundNormal=#777777
 BackgroundAlternate=#6f6f6f
 
-ForegroundNegative=255,149,149
+ForegroundNegative=#ffdfdf
 ForegroundNeutral=255,203,138
 ForegroundPositive=148,255,138
 ForegroundLink=149,190,255
 ForegroundVisited=173,165,255
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; LIGHT-MID                                                                  ;;
+;; LIGHT                                                                      ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [Colors:View]
@@ -101,14 +103,14 @@ DecorationFocus=#747474
 BackgroundNormal=#676767
 BackgroundAlternate=#5f5f5f
 
-ForegroundNegative=255,149,149
+ForegroundNegative=#ffdfdf
 ForegroundNeutral=255,203,138
 ForegroundPositive=148,255,138
 ForegroundLink=149,190,255
 ForegroundVisited=173,165,255
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; DARK-MID                                                                   ;;
+;; MID                                                                        ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [Colors:Button]
