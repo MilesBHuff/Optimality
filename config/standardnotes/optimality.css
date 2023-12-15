@@ -1,6 +1,79 @@
 :root {
 	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-	/* Optimality theme                                                          */
+	/* Optimality (foregrounds)                                                  */
+	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+	/* Bases */
+	--opt-fg-1: #ffffff;
+	--opt-fg-2: #e6e6e6;
+	--opt-fg-3: #cfcfcf;
+	--opt-fg-4: #bababa;
+	--opt-fg-5: #a6a6a6;
+
+	/* Active */
+	--opt-fg-active-1: var(--opt-fg-1);
+	--opt-fg-active-2: var(--opt-fg-1);
+	--opt-fg-active-3: var(--opt-fg-2);
+	--opt-fg-active-4: var(--opt-fg-3);
+
+	/* Normal */
+	--opt-fg-normal-1: var(--opt-fg-1);
+	--opt-fg-normal-2: var(--opt-fg-2);
+	--opt-fg-normal-3: var(--opt-fg-3);
+	--opt-fg-normal-4: var(--opt-fg-4);
+
+	/* Inactive */
+	--opt-fg-inactive-1: var(--opt-fg-2);
+	--opt-fg-inactive-2: var(--opt-fg-3);
+	--opt-fg-inactive-3: var(--opt-fg-4);
+	--opt-fg-inactive-4: var(--opt-fg-5);
+
+	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+	/* Optimality (backgrounds)                                                  */
+	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+	/* Normal */
+	--opt-bg-normal-1: #777777;
+	--opt-bg-normal-2: #676767;
+	--opt-bg-normal-3: #595959;
+	--opt-bg-normal-4: #4b4b4b;
+
+	/* Alternate */
+	--opt-bg-alt-1: #6f6f6f;
+	--opt-bg-alt-2: #5f5f5f;
+	--opt-bg-alt-3: #515151;
+	--opt-bg-alt-4: #3d3d3d;
+
+	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+	/* Optimality (hues)                                                         */
+	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+	/* Foreground (light) */
+	--opt-fg-normal-2-hue-000: #ffdfdf;
+
+	/* Foreground (mid) */
+	--opt-fg-normal-3-hue-000: #ff9595; /* TODO */
+	--opt-fg-normal-3-hue-045: #ffcb8a; /* TODO */
+	--opt-fg-normal-3-hue-090: #94ff8a; /* TODO */
+	--opt-fg-normal-3-hue-210: #95beff; /* TODO */
+	--opt-fg-normal-3-hue-270: #ada5ff; /* TODO */
+
+	/* Foreground (dark) */
+	--opt-fg-normal-4-hue-000: #ff9595; /* TODO */
+	--opt-fg-normal-4-hue-030: #ffcb8a; /* TODO */
+	--opt-fg-normal-4-hue-060: #ffcb8a; /* TODO */
+	--opt-fg-normal-4-hue-120: #94ff8a; /* TODO */
+	--opt-fg-normal-4-hue-210: #95beff; /* TODO */
+	--opt-fg-normal-4-hue-270: #ada5ff; /* TODO */
+
+	/* Background (mid) */
+	--opt-bg-normal-3-hue-0: var(--opt-bg-normal-3); /* TODO */
+	--opt-bg-normal-3-hue-45: var(--opt-bg-normal-3); /* TODO */
+	--opt-bg-normal-3-hue-90: var(--opt-bg-normal-3); /* TODO */
+	--opt-bg-normal-3-hue-210: var(--opt-bg-normal-3); /* TODO */
+
+	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+	/* Optimality (misc)                                                         */
 	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 	/* Hack is probably the best monospaced font for programming.
@@ -34,31 +107,31 @@
 	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 	/* Default */
-	--sn-stylekit-shadow-color: #c8c8c8;
-  	--sn-stylekit-background-color: #ffffff;
-	--sn-stylekit-paragraph-text-color: #454545;
-	--sn-stylekit-foreground-color: #19191c;
-	--sn-stylekit-border-color: #dfe1e4;
+	--sn-stylekit-shadow-color: #565656; /* TODO: Variablize "hover" colors. */
+  	--sn-stylekit-background-color: var(--opt-bg-normal-4);
+	--sn-stylekit-paragraph-text-color: var(--opt-fg-inactive-4);
+	--sn-stylekit-foreground-color:  var(--opt-fg-normal-4);
+	--sn-stylekit-border-color: var(--opt-fg-inactive-4);
 	/* Default Contrast */
-	--sn-stylekit-contrast-background-color: rgba(244, 245, 247, 1);
-	--sn-stylekit-contrast-foreground-color: #2e2e2e;
-	--sn-stylekit-contrast-border-color: #e3e3e3;
+	--sn-stylekit-contrast-background-color: var(--opt-bg-alt-4);
+	--sn-stylekit-contrast-foreground-color: var(--opt-fg-normal-4);
+	--sn-stylekit-contrast-border-color: var(--opt-fg-inactive-4);
 
 	/* Secondary */
-	--sn-stylekit-secondary-background-color: #eeeff1;
-	--sn-stylekit-secondary-foreground-color: #2e2e2e;
-	--sn-stylekit-secondary-border-color: #e3e3e3;
+	--sn-stylekit-secondary-background-color: var(--opt-bg-normal-2);
+	--sn-stylekit-secondary-foreground-color: var(--opt-fg-normal-2);
+	--sn-stylekit-secondary-border-color: var(--opt-fg-inactive-2);
 	/* Secondary Contrast */
-	--sn-stylekit-secondary-contrast-background-color: #e3e3e3;
-	--sn-stylekit-secondary-contrast-foreground-color: #2e2e2e;
-	--sn-stylekit-secondary-contrast-border-color: #a2a2a2;
+	--sn-stylekit-secondary-contrast-background-color: var(--opt-bg-alt-2);
+	--sn-stylekit-secondary-contrast-foreground-color: var(--opt-fg-normal-2);
+	--sn-stylekit-secondary-contrast-border-color: var(--opt-fg-inactive-2);
 
 	/* Component */
-	--sn-component-background-color: var(--background);
-	--sn-component-foreground-highlight-color: var(--highlight-color);
-	--sn-component-foreground-color: var(--foreground);
-	--sn-component-inner-border-color: var(--foreground);
-	--sn-component-outer-border-color: var(--comment);
+	--sn-component-background-color: var(--opt-bg-normal-3);
+	--sn-component-foreground-highlight-color: #777777; /* TODO: Variablize "highlight" colors. */
+	--sn-component-foreground-color: var(--opt-fg-normal-3);
+	--sn-component-inner-border-color: var(--opt-fg-inactive-3);
+	--sn-component-outer-border-color: #656565; /* TODO: Variablize "hover" colors. */
 
 	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 	/* Standard Notes (widget colors)                                            */
@@ -71,20 +144,20 @@
 	--sn-desktop-titlebar-ui-hover-color: var(--sn-stylekit-info-color);
 
 	/* Scrollbar */
-	--sn-stylekit-scrollbar-thumb-color: #dfdfdf;
-	--sn-stylekit-scrollbar-track-border-color: #e7e7e7;
+	--sn-stylekit-scrollbar-thumb-color: var(--opt-bg-inactive-3);
+	--sn-stylekit-scrollbar-track-border-color: var(--opt-fg-inactive-3);
 
 	/* Input */
-	--sn-stylekit-input-placeholder-color: #a8a8a8;
-	--sn-stylekit-input-border-color: #e3e3e3;
+	--sn-stylekit-input-placeholder-color: var(--opt-fg-inactive-2);
+	--sn-stylekit-input-border-color: var(--opt-fg-inactive-2);
 
 	/* Editor */
-	--sn-stylekit-editor-background-color: var(--sn-stylekit-background-color);
-	--sn-stylekit-editor-foreground-color: var(--sn-stylekit-foreground-color);
+	--sn-stylekit-editor-background-color: var(--opt-bg-normal-2);
+	--sn-stylekit-editor-foreground-color: var(--opt-fg-normal-2);
 
 	/* Menus */
-	--sn-stylekit-menu-border: 1px solid #434b60;
-	--menu-item-sep-color: rgba(0, 0, 0, 0.1);
+	--sn-stylekit-menu-border: 1px solid var(--opt-fg-inactive-3);
+	--menu-item-sep-color: var(--opt-fg-inactive-3);
 
 	/* Misc */
 	--footer-bar-border-top-color: 0;
@@ -98,44 +171,44 @@
 	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 	/* Passive */
-	--sn-stylekit-passive-color-0: #515357;
-	--sn-stylekit-passive-color-1: #72767e;
-	--sn-stylekit-passive-color-2: #bbbec4;
-	--sn-stylekit-passive-color-3: #dfe1e4;
-	--sn-stylekit-passive-color-4: #eeeff1;
-	--sn-stylekit-passive-color-4-opacity-variant: #bbbec43d;
-	--sn-stylekit-passive-color-5: #f4f5f7;
-	--sn-stylekit-passive-color-6: #e5e5e5;
-	--sn-stylekit-passive-color-super-light: #f9f9f9;
+	/* TODO: Do I need to invert these? */
+	--sn-stylekit-passive-color-0: #747474;
+	--sn-stylekit-passive-color-1: #848484;
+	--sn-stylekit-passive-color-2: #959595; --sn-stylekit-passive-color-4-opacity-variant: #9595953d;
+	--sn-stylekit-passive-color-3: var(--opt-fg-5);
+	--sn-stylekit-passive-color-4: var(--opt-fg-4);
+	--sn-stylekit-passive-color-5: var(--opt-fg-3);
+	--sn-stylekit-passive-color-6: var(--opt-fg-2);
+	--sn-stylekit-passive-color-super-light: var(--opt-fg-1);
 
 	/* Accessory */
-	--sn-stylekit-accessory-tint-color-1: #086dd6;
-	--sn-stylekit-accessory-tint-color-2: #ea6595;
-	--sn-stylekit-accessory-tint-color-3: #ebad00;
-	--sn-stylekit-accessory-tint-color-4: #7049cf;
-	--sn-stylekit-accessory-tint-color-5: #1aa772;
-	--sn-stylekit-accessory-tint-color-6: #f28c52;
+	--sn-stylekit-accessory-tint-hue-1: var(--opt-fg-normal-4-hue-210);
+	--sn-stylekit-accessory-tint-hue-2: var(--opt-fg-normal-4-hue-000);
+	--sn-stylekit-accessory-tint-hue-3: var(--opt-fg-normal-4-hue-060);
+	--sn-stylekit-accessory-tint-hue-4: var(--opt-fg-normal-4-hue-270);
+	--sn-stylekit-accessory-tint-hue-5: var(--opt-fg-normal-4-hue-120);
+	--sn-stylekit-accessory-tint-hue-6: var(--opt-fg-normal-4-hue-030);
 
 	/* Info */
-	--sn-stylekit-info-color: #086dd6;
-	--sn-stylekit-info-color-darkened: #065cb5;
-	--sn-stylekit-info-contrast-color: #ffffff;
-	--sn-stylekit-info-backdrop-color: #2b6fcf0f;
+	--sn-stylekit-info-color: var(--opt-fg-normal-3-hue-210);
+	--sn-stylekit-info-colorened: var(--opt-fg-normal-4-hue-210); /* TODO: Is this variable correct for a dark theme, or should it be "lightened" instead? */
+	--sn-stylekit-info-contrast-color: var(--opt-bg-normal-3-hue-210);
+	--sn-stylekit-info-backdrop-color: var(--opt-bg-normal-4-hue-210);
 
 	/* Success */
-	--sn-stylekit-success-color: #007662;
-	--sn-stylekit-success-contrast-color: #ffffff;
+	--sn-stylekit-success-color: var(--opt-fg-normal-3-hue-090);
+	--sn-stylekit-success-contrast-color: var(--opt-bg-normal-3-hue-090);
 
 	/* Neutral */
-	--sn-stylekit-neutral-color: #72767e;
-	--sn-stylekit-neutral-contrast-color: #ffffff;
+	--sn-stylekit-neutral-color: var(--opt-fg-normal-3);
+	--sn-stylekit-neutral-contrast-color: var(--opt-bg-normal-3);
 
 	/* Warning */
-	--sn-stylekit-warning-color: #ebad00;
-	--sn-stylekit-warning-contrast-color: #ffffff;
+	--sn-stylekit-warning-color: var(--opt-fg-normal-3-hue-045);
+	--sn-stylekit-warning-contrast-color: var(--opt-bg-normal-3-hue-045);
 
 	/* Danger */
-	--sn-stylekit-danger-color: #cc2128;
-	--sn-stylekit-danger-contrast-color: #ffffff;
-	--sn-stylekit-danger-light-color: #f9e4e5;
+	--sn-stylekit-danger-light-color: var(--opt-fg-normal-2-hue-000); /* TODO: Should I make this different from the standard danger color? */
+	--sn-stylekit-danger-color: var(--opt-fg-normal-3-hue-000);
+	--sn-stylekit-danger-contrast-color: var(--opt-bg-normal-3-hue-000);
 }
