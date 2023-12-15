@@ -1,19 +1,41 @@
 {
   "name": "@standardnotes/optimality",
-  "version": "4.0.0",
-  "main": "main.css",
-  "contributors": [
-	"Standard Notes",
-	"Miles B Huff"
+  "version": "0.0.0",
+  "license": "LAGPL-3.0-or-later",
+  "description": "This is a mid-contrast, mid-grey theme. It strikes a balance between light and dark themes, and works well with both light and dark images and websites.",
+  "keywords": [
+	"Optimality",
+    "optimal",
+	"color scheme",
+	"theme",
+	"dark theme",
+	"dark mode",
+	"Standard Notes"
   ],
+  "main": "optimality.css",
+  "author": {
+    "name": "Miles B Huff",
+    "email": "MilesBHuff@NoReply.GitHub.com"
+  },
+  "homepage": "HTTPS://GitHub.com/MilesBHuff/Optimality-Theme#ReadMe",
+  "bugs": {
+    "url": "HTTPS://GitHub.com/MilesBHuff/Optimality-Theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+HTTPS://GitHub.com/MilesBHuff/Optimality-Theme.git"
+  },
   "publishConfig": {
     "access": "public"
+  },
+  "directories": {
+    "lib": "."
   },
   "sn": {
     "name": "Optimality",
     "content_type": "SN|Theme",
     "area": "themes",
-	"main": "main.css",
+	"main": "optimality.css",
     "showInGallery": true
   }
 }
