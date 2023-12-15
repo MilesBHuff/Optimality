@@ -53,9 +53,22 @@
 	--sn-stylekit-secondary-contrast-foreground-color: #2e2e2e;
 	--sn-stylekit-secondary-contrast-border-color: #a2a2a2;
 
+	/* Component */
+	--sn-component-background-color: var(--background);
+	--sn-component-foreground-highlight-color: var(--highlight-color);
+	--sn-component-foreground-color: var(--foreground);
+	--sn-component-inner-border-color: var(--foreground);
+	--sn-component-outer-border-color: var(--comment);
+
 	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 	/* Standard Notes (widget colors)                                            */
 	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+	/* Titlebar */
+	--sn-desktop-titlebar-bg-color: var(--primary-bg-color);
+	--sn-desktop-titlebar-border-color: var(--border-color);
+	--sn-desktop-titlebar-ui-color: var(--ui-text-color);
+	--sn-desktop-titlebar-ui-hover-color: var(--sn-stylekit-info-color);
 
 	/* Scrollbar */
 	--sn-stylekit-scrollbar-thumb-color: #dfdfdf;
@@ -68,6 +81,17 @@
 	/* Editor */
 	--sn-stylekit-editor-background-color: var(--sn-stylekit-background-color);
 	--sn-stylekit-editor-foreground-color: var(--sn-stylekit-foreground-color);
+
+	/* Menus */
+	--sn-stylekit-menu-border: 1px solid #434b60;
+	--menu-item-sep-color: rgba(0, 0, 0, 0.1);
+
+	/* Misc */
+	--footer-bar-border-top-color: 0;
+	--navigation-item-selected-background-color: var(--sn-stylekit-background-color);
+	--normal-button-background-color: var(--sn-stylekit-passive-color-5);
+	--popover-border-color: var(--sn-stylekit-passive-color-3);
+	--separator-color: var(--sn-stylekit-passive-color-3);
 
 	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 	/* Standard Notes (special colors)                                           */
