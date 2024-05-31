@@ -1,0 +1,68 @@
+################################################################################
+
+[Control Panel\\Colors] 1717128795
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# View text (selected)
+"HilightText"="255 255 255"
+
+# View text (normal)
+"WindowText"="230 230 230"
+
+# View borders (selected)
+"WindowFrame"="149 149 149"
+
+# View backgrounds (selected)
+"Hilight"="149 149 149"
+"HotTrackingColor"="149 149 149"
+
+# View backgrounds (normal)
+"AppWorkSpace"="103 103 103"
+"Background"="103 103 103"
+"Window"="103 103 103"
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# Button text (normal)
+"InfoText"="207 207 207"
+
+# Button backgrounds (selected)
+"MenuHilight"="132 132 132"
+
+# Button backgrounds (normal)
+"ButtonAlternateFace"="89 89 89"
+"InfoWindow"="89 89 89"
+"Menu"="89 89 89"
+"Scrollbar"="89 89 89"
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# Window text (normal)
+"ButtonText"="207 207 207"
+"MenuText"="207 207 207"
+"TitleText"="207 207 207"
+
+# Window text (disabled)
+"GrayText"="166 166 166"
+"InactiveTitleText"="166 166 166"
+
+# Window borders (normal)
+"ActiveBorder"="116 116 116"
+
+# Window borders (3D)
+"ButtonHilight"="116 116 116"
+"ButtonLight"="89 89 89"
+"ButtonShadow"="61 61 61"
+"ButtonDkShadow"="34 34 34"
+
+# Window backgrounds (normal)
+"ButtonFace"="75 75 75"
+"MenuBar"="75 75 75"
+"ActiveTitle"="75 75 75"
+"InactiveTitle"="75 75 75"
+"GradientActiveTitle"="75 75 75"
+"GradientInactiveTitle"="75 75 75"
+"InactiveBorder"="75 75 75"
+
+################################################################################
