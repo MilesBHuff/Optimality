@@ -27,13 +27,9 @@
 # Button text (normal)
 "InfoText"="207 207 207"
 
-# Button backgrounds (selected)
-"MenuHilight"="132 132 132"
-
 # Button backgrounds (normal)
 "ButtonAlternateFace"="89 89 89"
 "InfoWindow"="89 89 89"
-"Menu"="89 89 89"
 "Scrollbar"="89 89 89"
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -56,8 +52,12 @@
 "ButtonShadow"="61 61 61"
 "ButtonDkShadow"="34 34 34"
 
+# Button backgrounds (selected)
+"MenuHilight"="116 116 116"
+
 # Window backgrounds (normal)
 "ButtonFace"="75 75 75"
+"Menu"="75 75 75"
 "MenuBar"="75 75 75"
 "ActiveTitle"="75 75 75"
 "InactiveTitle"="75 75 75"
